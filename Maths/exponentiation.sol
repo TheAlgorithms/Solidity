@@ -21,7 +21,8 @@ contract Exponentiation
 	}
 	
 	// Defining the function to calculate the exponent
-	function Expo() view public returns (uint256) {
+	function Expo() view public returns (uint256)
+	{
 		uint256 answer = firstNo ** secondNo ;
 		return answer;
 	}
