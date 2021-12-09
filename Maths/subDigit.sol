@@ -8,13 +8,11 @@ pragma solidity 0.6.6;
 // Creating a contract
 contract subDigit
 {
-	// Initializing the
-	// state variables
+	// Initializing the state variables
 	int16 firstNo = 2 ;
 	int16 secondNo = 10;
 	
-	// Defining a function
-	// to subtract two numbers
+	// Defining a function to subtract two numbers
 	function Sub() view public returns (int16)
 	{
 		int16 ans = firstNo - secondNo;

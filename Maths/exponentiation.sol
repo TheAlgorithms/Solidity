@@ -2,7 +2,7 @@
 pragma solidity ^0.6.6;
 
 // Creating a contract
-contract gfgExpo
+contract Exponentiation
 {
 	// Declaring the state variables
 	uint16 firstNo;
