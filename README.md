@@ -1,4 +1,4 @@
-# Solidity
+# Algorithms implemented in Solidity
 
-Solidity Algorithms (still a work-in-progress project)\
-This is going to be used for our partnership with [Dev Protocol](https://devprotocol.xyz).
+Algorithms implemented in Solidity (still a work-in-progress project)\
+This is going to be used for our partnership with [Dev Protocol](https://devprotocol.xyz). 🚀
