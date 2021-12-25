@@ -2,11 +2,11 @@ pragma solidity ^0.8.0;
 
 /* @notice This is a Solidity implementation to Fibonacci sequence
  * problem.
- * @author Wenceslas Sanchez
- * @dev the Binet implementation is missing.
+ * @author Wenceslas Sanchez (wenceslas-sanchez)
+ * @dev Binet implementation is missing.
 */
 contract Fibonacci {
-    /* @notice
+    /* @notice Compute n-th terme of Fibonacci sequence. It starts from index 0.
      * @dev This method use a lot of gas to run. Recursive methods
      * are not good ideas.
      * For instance with RemixIDE, its hard to go further 10th term.
@@ -24,8 +24,8 @@ contract Fibonacci {
     }
 
     /* @notice Naive recursive implementation of Fibonacci sequence problem.
+     * It starts from index 0.
      * @dev It is based on fibRecursiveTerm => consume a lot of gas.
-     *
     */
     function fibRecursive(uint _n) public pure returns (uint[] memory) {
         uint[] memory result= new uint[](_n + 1);
@@ -38,12 +38,13 @@ contract Fibonacci {
     }
 
     /* @notice Implementation of Fibonacci sequence problem with memoization.
+     * It starts from index 0.
      * @dev Max computable term around 400.
     */
     function fibMemoization(uint _n) public pure returns (uint[] memory) {
         uint cache_size;
-        if (_n < 3) {
-            cache_size= 3; // because we need to cache at least 3 first values.
+        if (_n < 2) {
+            cache_size= 2; // because we need to cache at least the first 2 values.
         } else {
             cache_size= _n + 1;
         }
@@ -51,10 +52,9 @@ contract Fibonacci {
         uint[] memory result= new uint[](_n + 1);
         cache[0]= 0;
         cache[1]= 1;
-        cache[2]= 1;
 
         for (uint i= 0; i < _n + 1; i++) {
-            if (i > 2) {
+            if (i > 1) {
                 cache[i] = cache[i - 1] + cache[i - 2];
             }
             result[i]= cache[i];
@@ -62,6 +62,5 @@ contract Fibonacci {
 
         return result;
     }
-
 }
 
