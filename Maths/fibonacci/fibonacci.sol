@@ -33,5 +33,31 @@ contract Fibonacci {
         return result;
     }
 
+    /*
+     *
+    */
+    function fibMemoization(uint _n) public pure returns (uint[] memory) {
+        uint cache_size;
+        if (_n <= 2) {
+            cache_size= 3;
+        } else {
+            cache_size= _n;
+        }
+        uint[] memory cache= new uint[](cache_size); // cache 3 first values
+        uint[] memory result= new uint[](_n);
+        cache[0]= 0;
+        cache[1]= 1;
+        cache[2]= 1;
+
+        for (uint i= 0; i <= _n - 1; i++) {
+            if (i > 2) {
+                cache[i] = cache[i - 1] + cache[i - 2];
+            }
+            result[i]= cache[i];
+
+        }
+
+        return result;
+    }
 }
 
