@@ -1,16 +1,14 @@
 pragma solidity ^0.8.0;
 
-/* @notice This is a Solidity implementation to Fibonacci sequence
- * problem.
- * @author Wenceslas Sanchez (wenceslas-sanchez)
- * @dev Binet implementation is missing.
-*/
+/** @title This is a Solidity implementation to Fibonacci sequence problem.
+  * @author Wenceslas Sanchez (wenceslas-sanchez)
+  * @dev Binet implementation is missing.
+  */
 contract Fibonacci {
-    /* @notice Compute n-th terme of Fibonacci sequence. It starts from index 0.
-     * @dev This method use a lot of gas to run. Recursive methods
-     * are not good ideas.
-     * For instance with RemixIDE, its hard to go further 10th term.
-    */
+    /** @title Computes the n-th (0-indexed) Fibonacci number using recursion.
+      * @dev This method use a lot of gas to run. Recursive methods are not good ideas.
+      * For instance with RemixIDE, its hard to go further 10th term.
+      */
     function fibRecursiveTerm(uint _n) public pure returns (uint) {
         uint result;
 
@@ -23,10 +21,9 @@ contract Fibonacci {
         return result;
     }
 
-    /* @notice Naive recursive implementation of Fibonacci sequence problem.
-     * It starts from index 0.
-     * @dev It is based on fibRecursiveTerm => consume a lot of gas.
-    */
+    /** @title Computes the first n (0-indexed) Fibonacci numbers using recursion
+      * @dev It is based on fibRecursiveTerm => consume a lot of gas.
+      */
     function fibRecursive(uint _n) public pure returns (uint[] memory) {
         uint[] memory result= new uint[](_n + 1);
 
@@ -37,10 +34,9 @@ contract Fibonacci {
         return result;
     }
 
-    /* @notice Implementation of Fibonacci sequence problem with memoization.
-     * It starts from index 0.
-     * @dev Max computable term around 400.
-    */
+    /** @title Computes the first n (0-indexed) Fibonacci numbers using memoization.
+      * @dev Max computable term around 400.
+      */
     function fibMemoization(uint _n) public pure returns (uint[] memory) {
         uint cache_size;
         if (_n < 2) {
