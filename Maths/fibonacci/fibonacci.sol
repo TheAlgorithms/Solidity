@@ -5,7 +5,7 @@ pragma solidity ^0.8.0;
   * @dev Binet implementation is missing.
   */
 contract Fibonacci {
-    /** @title Computes the n-th (0-indexed) Fibonacci number using recursion.
+    /** @notice Computes the n-th (0-indexed) Fibonacci number using recursion.
       * @dev This method use a lot of gas to run. Recursive methods are not good ideas.
       * For instance with RemixIDE, its hard to go further 10th term.
       */
@@ -21,7 +21,7 @@ contract Fibonacci {
         return result;
     }
 
-    /** @title Computes the first n (0-indexed) Fibonacci numbers using recursion
+    /** @notice Computes the first n (0-indexed) Fibonacci numbers using recursion
       * @dev It is based on fibRecursiveTerm => consume a lot of gas.
       */
     function fibRecursive(uint _n) public pure returns (uint[] memory) {
@@ -34,7 +34,7 @@ contract Fibonacci {
         return result;
     }
 
-    /** @title Computes the first n (0-indexed) Fibonacci numbers using memoization.
+    /** @notice Computes the first n (0-indexed) Fibonacci numbers using memoization.
       * @dev Max computable term around 400.
       */
     function fibMemoization(uint _n) public pure returns (uint[] memory) {
