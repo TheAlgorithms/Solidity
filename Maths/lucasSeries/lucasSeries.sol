@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
   * @author Wenceslas Sanchez (wenceslas-sanchez)
   * @dev Related to Fibonacci sequence number.
   */
-contract lucasSeries {
+contract LucasSeries {
     /** @notice Computes the n-th (0-indexed) Lucas number using recursion.
       * @dev This method use a lot of gas to run. Recursive methods are not good ideas.
       * For instance with RemixIDE, its hard to go further 10th term.

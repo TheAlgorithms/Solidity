@@ -5,7 +5,7 @@ pragma solidity ^0.8.0;
   * cubes of its digits.
   * @author Wenceslas Sanchez (wenceslas-sanchez)
   */
-contract armstrongNumber {
+contract ArmstrongNumber {
     /** @notice Return the digit numbers of an integer.
       * @dev From https://ethereum.stackexchange.com/questions/6623/can-i-check-the-number-of-digits-in-solidity
       */
