@@ -29,7 +29,7 @@ jobs:
           npm install --save-dev prettier prettier-plugin-solidity
       # Runs a set of commands using the runners shell
       - name: Execute Prettier
-        run: npx prettier --write '*.sol'
+        run: npx prettier --write .
 
       # Commit formated files
       - name: Check for modified files
