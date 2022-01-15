@@ -1,0 +1,45 @@
+name: AutoPrettier
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '*'
+
+jobs:
+  autoprettier:
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      # Runs a single command using the runners shell
+      - name: Install
+        run: |
+          npm install
+          npm install --save-dev prettier prettier-plugin-solidity
+      # Runs a set of commands using the runners shell
+      - name: Execute Prettier
+        run: npx prettier --write .
+
+      # Commit formated files
+      - name: Check for modified files
+        id: git-check
+        run: |
+          git config --global user.name 'autoprettier'
+          git config --global user.email 'actions@github.com'
+          echo ::set-output name=modified::$(if git diff-index --quiet HEAD --; then echo "false"; else echo "true"; fi)
+      - name: Commit if any changes.
+        if: steps.git-check.outputs.modified == 'true'
+        run: |
+          git commit -am "🎨 Format Solidity code with Prettier"
+          git push
