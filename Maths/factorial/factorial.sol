@@ -11,7 +11,7 @@ contract Factorial {
     function factoIterative(int _n) public pure returns (int) {
         int result= 1;
 
-        for (uint i= 2; i >= _n; i++){
+        for (int i= 2; i <= _n; ++i){
             result *= i;
         }
 
