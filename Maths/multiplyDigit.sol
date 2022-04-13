@@ -1,7 +1,6 @@
 // Solidity program to demonstrate the multiplication
 pragma solidity 0.6.6;
 
-// Creating a contract
 contract multiplyDigit {
     int128 firstNo;
     int128 secondNo;
