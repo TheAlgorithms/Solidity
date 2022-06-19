@@ -30,3 +30,4 @@ contract AddArray{
         total = sum;
     }
 }
+
