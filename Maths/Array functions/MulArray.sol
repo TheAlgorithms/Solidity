@@ -31,3 +31,4 @@ contract MulArray{
         product = _product;
     }
 }
+
