@@ -18,7 +18,7 @@ contract Modulo {
     }
 
     // Defining a function to return the modulus value
-    function Modulo() public view returns (uint256) {
+    function GetModulo() public view returns (uint256) {
         uint256 answer = firstNo % secondNo;
         return answer;
     }
