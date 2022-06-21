@@ -38,3 +38,4 @@ contract ArmstrongNumber {
         return _n == sum;
     }
 }
+
