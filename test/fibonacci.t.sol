@@ -5,11 +5,15 @@ import "forge-std/Test.sol";
 import {Fibonacci} from "../src/Maths/fibonacci/fibonacci.sol";
 
 contract ContractTest is Test {
+    // Target contract
     Fibonacci fib;
 
+    //  =====   Set up  =====
     function setUp() public {
         fib = new Fibonacci();
     }
+
+    /// @dev Test `fibRecursiveTerm`
 
     function testGoodFibRecursiveTerm() public {
         // 35 - 40 is limit with foundry
@@ -31,6 +35,8 @@ contract ContractTest is Test {
         );
         //assertEq(fib.fibRecursiveTerm(99), 218922995834555169026, "Consume too much gas");
     }
+
+    /// @dev Test `fibRecursive`
 
     function testGoodFibRecursive() public {
         uint256[] memory expected_total = new uint256[](11);
@@ -106,6 +112,8 @@ contract ContractTest is Test {
             );
         }
     }
+
+    /// @dev Test `fibMemoization`
 
     function testGoodFibMemoization() public {
         uint256[] memory expected_total = new uint256[](11);
