@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import {ArmstrongNumber} from "../src/Maths/armstrongNumber/armstrongNumber.sol";
+import "./armstrongNumber.sol";
 
 contract ArmstrongNumberTest is Test {
     // Target contract

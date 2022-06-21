@@ -2,8 +2,7 @@
 pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
-import {Fibonacci} from "../src/Maths/fibonacci/fibonacci.sol";
-import "../src/Maths/factorial/factorial.sol";
+import "./factorial.sol";
 
 contract FactorialTest is Test {
     // Target contract
