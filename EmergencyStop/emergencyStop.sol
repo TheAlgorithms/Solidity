@@ -5,7 +5,7 @@ pragma solidity ^0.8.10;
  * @title Solidity Emergency Stop pattern
  *
  * This is a pattern to stop the contract execution.
- * MerchantBank is the owner of the contract is the person that deploys it.
+ * Contract MerchantBank which the owner of the contract is the person that deploys it.
  *
  */
 contract MerchantBank {
