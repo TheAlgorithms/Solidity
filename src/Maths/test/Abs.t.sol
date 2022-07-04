@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 import "forge-std/Test.sol";
-import "./Abs.sol";
+import "../Abs.sol";
 
 contract AbsTest is Test {
     // Target contract
