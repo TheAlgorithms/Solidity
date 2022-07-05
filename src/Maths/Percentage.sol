@@ -60,7 +60,7 @@ contract PercentageCalculator {
         /// @dev Get the product of the numerators.
         uint256 numeratorProduct = a * b * (10 ** dp);
         /// @dev Ensure the numeratorProduct is > the denominator [100].
-        require(numeratorProduct > 100, "Small decimal place value.");
+        require(numeratorProduct >= 100, "Small decimal place value.");
         /// @dev Get and return the percentage to `dp` decimal places.
         percentage = (a * b * (10 ** dp)) / 100;
     }
