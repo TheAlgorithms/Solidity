@@ -65,3 +65,4 @@ contract PercentageCalculator {
         percentage = (a * b * (10 ** dp)) / 100;
     }
 }
+
