@@ -20,7 +20,7 @@ contract AreaTest is Test {
     /// @dev Test `surfaceAreaCube`
 
     function test_surfaceAreaCube() public {
-        uint256 expected_result = 6 * 1**2;
+        uint256 expected_result = 6 * 1 ** 2;
 
         uint256 result = area.surfaceAreaCube(1);
 
@@ -30,7 +30,7 @@ contract AreaTest is Test {
     /// @dev Test `surfaceAreaSphere`
 
     function test_surfaceAreaSphere() public {
-        uint256 expected_result = (4 * PI_IN_WEI * 5**2) / 1e18;
+        uint256 expected_result = (4 * PI_IN_WEI * 5 ** 2) / 1e18;
 
         uint256 result = area.surfaceAreaSphere(5);
 
@@ -50,7 +50,7 @@ contract AreaTest is Test {
     /// @dev Test `areaSquare`
 
     function test_areaSquare() public {
-        uint256 expected_result = 4**2;
+        uint256 expected_result = 4 ** 2;
 
         uint256 result = area.areaSquare(4);
 
@@ -90,7 +90,7 @@ contract AreaTest is Test {
     /// @dev Test `areaCircle`
 
     function test_areaCircle() public {
-        uint256 expected_result = (PI_IN_WEI * 7**2) / 1e18;
+        uint256 expected_result = (PI_IN_WEI * 7 ** 2) / 1e18;
 
         uint256 result = area.areaCircle(7);
 

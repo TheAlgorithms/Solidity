@@ -1,10 +1,12 @@
 pragma solidity ^0.8.0;
 
-/** @title This is a Solidity implementation to factorial.
+/**
+ * @title This is a Solidity implementation to factorial.
  * @author Wenceslas Sanchez (wenceslas-sanchez)
  */
 contract Factorial {
-    /** @notice Compute the factorial of a number iteratively.
+    /**
+     * @notice Compute the factorial of a number iteratively.
      *
      */
     function factoIterative(uint256 _n) public pure returns (uint256) {
@@ -17,7 +19,8 @@ contract Factorial {
         return result;
     }
 
-    /** @notice Compute the factorial of a number recursively.
+    /**
+     * @notice Compute the factorial of a number recursively.
      *
      */
     function factoRecursive(uint256 _n) public pure returns (uint256) {

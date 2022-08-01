@@ -1,11 +1,13 @@
 pragma solidity ^0.8.0;
 
-/** @title This is a Solidity implementation to Fibonacci sequence problem.
+/**
+ * @title This is a Solidity implementation to Fibonacci sequence problem.
  * @author Wenceslas Sanchez (wenceslas-sanchez)
  * @dev Binet implementation is missing.
  */
 contract Fibonacci {
-    /** @notice Computes the n-th (0-indexed) Fibonacci number using recursion.
+    /**
+     * @notice Computes the n-th (0-indexed) Fibonacci number using recursion.
      * @dev This method use a lot of gas to run. Recursive methods are not good ideas.
      * For instance with RemixIDE, its hard to go further 10th term.
      */
@@ -21,7 +23,8 @@ contract Fibonacci {
         return result;
     }
 
-    /** @notice Computes the first n (0-indexed) Fibonacci numbers using recursion
+    /**
+     * @notice Computes the first n (0-indexed) Fibonacci numbers using recursion
      * @dev It is based on fibRecursiveTerm => consume a lot of gas.
      */
     function fibRecursive(uint256 _n) public pure returns (uint256[] memory) {
@@ -34,10 +37,15 @@ contract Fibonacci {
         return result;
     }
 
-    /** @notice Computes the first n (0-indexed) Fibonacci numbers using memoization.
+    /**
+     * @notice Computes the first n (0-indexed) Fibonacci numbers using memoization.
      * @dev Max computable term around 400.
      */
-    function fibMemoization(uint256 _n) public pure returns (uint256[] memory) {
+    function fibMemoization(uint256 _n)
+        public
+        pure
+        returns (uint256[] memory)
+    {
         uint256 cache_size;
         if (_n < 2) {
             cache_size = 2; // because we need to cache at least the first 2 values.
