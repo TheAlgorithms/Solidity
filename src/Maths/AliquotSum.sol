@@ -1,7 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-/** @title Get the absoule value of an integer.
+/**
+ * @title Get the absoule value of an integer.
  * @author Perelyn https://github.com/Perelyn-sama
  */
 contract AliquotSum {
