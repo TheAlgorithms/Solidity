@@ -30,7 +30,7 @@
 
 </div>
 
-This is going to be used for our partnership with [Dev Protocol](https://devprotocol.xyz) . 🚀
+This is going to be used for our partnership with [Dev Protocol](https://devprotocol.xyz). 🚀
 
 Implementations are for learning purposes only. As they may be less secure than in real-world context, use them at your discretion.
 
