@@ -49,3 +49,4 @@ contract BinarySearch {
         return 0;
     }    
 }
+
