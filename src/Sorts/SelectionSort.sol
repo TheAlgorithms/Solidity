@@ -10,7 +10,7 @@ pragma solidity ^0.8.0;
 /** @dev Selection sort is a sorting algorithm, whereby you place 
  * the smaller values into sorted position one at a time.
 */
-contract SelectionSort{
+contract SelectionSort {
     function selectionSort(uint256[] memory _nums) 
       public 
       pure 
