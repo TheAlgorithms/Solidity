@@ -96,7 +96,7 @@ contract LucasSeriesTest is Test {
                         Strings.toString(expected_total[i])
                     )
                 )
-                );
+            );
             assertEq(
                 lucasSeries.lucasRecursiveTerm(i),
                 expected_total[i],
@@ -132,7 +132,7 @@ contract LucasSeriesTest is Test {
                         Strings.toString(expected_total[i])
                     )
                 )
-                );
+            );
             assertEq(
                 lucasSeries.lucasDynamicTerm(i),
                 expected_total[i],

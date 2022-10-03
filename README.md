@@ -26,8 +26,6 @@
   <h3>All algorithms implemented in Solidity - for education</h3>
   <h5>(still a work-in-progress project)</h5>
 
-
-
 </div>
 
 This is going to be used for our partnership with [Dev Protocol](https://devprotocol.xyz). 🚀

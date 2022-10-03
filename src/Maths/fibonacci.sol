@@ -41,11 +41,7 @@ contract Fibonacci {
      * @notice Computes the first n (0-indexed) Fibonacci numbers using memoization.
      * @dev Max computable term around 400.
      */
-    function fibMemoization(uint256 _n)
-        public
-        pure
-        returns (uint256[] memory)
-    {
+    function fibMemoization(uint256 _n) public pure returns (uint256[] memory) {
         uint256 cache_size;
         if (_n < 2) {
             cache_size = 2; // because we need to cache at least the first 2 values.

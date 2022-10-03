@@ -1,0 +1,27 @@
+{
+  "name": "solidity",
+  "version": "0.1.0",
+  "description": "Algorithms and data structures implemented in Solidity.",
+  "keywords": [
+    "solidity",
+    "algorithms",
+    "data-structures"
+  ],
+  "scripts": {
+    "test": "npx prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheAlgorithms/Solidity.git"
+  },
+  "author": "The Algorithms <hello@the-algorithms.com>",
+  "license": "LGPL-2.1-only",
+  "bugs": {
+    "url": "https://github.com/TheAlgorithms/Solidity/issues"
+  },
+  "homepage": "https://github.com/TheAlgorithms/Solidity#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.24"
+  }
+}

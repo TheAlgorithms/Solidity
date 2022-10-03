@@ -29,7 +29,9 @@ contract FibonacciTest is Test {
         assertEq(fib.fibRecursiveTerm(9), 34, "Fibonacci 9-th term is 34.");
         assertEq(fib.fibRecursiveTerm(10), 55, "Fibonacci 10-th term is 55.");
         assertEq(
-            fib.fibRecursiveTerm(17), 1597, "Fibonacci 17-th term is 1597."
+            fib.fibRecursiveTerm(17),
+            1597,
+            "Fibonacci 17-th term is 1597."
         ); //assertEq(fib.fibRecursiveTerm(99), 218922995834555169026, "Consume too much gas");
     }
 
@@ -42,37 +44,49 @@ contract FibonacciTest is Test {
         expected_total[0] = 0;
         result = fib.fibRecursive(0);
         assertEq(
-            expected_total[0], result[0], "Fibonacci 0-th suite last value is 0."
+            expected_total[0],
+            result[0],
+            "Fibonacci 0-th suite last value is 0."
         );
 
         expected_total[1] = 1;
         result = fib.fibRecursive(1);
         assertEq(
-            expected_total[1], result[1], "Fibonacci 1-th suite last value is 1."
+            expected_total[1],
+            result[1],
+            "Fibonacci 1-th suite last value is 1."
         );
 
         expected_total[2] = 1;
         result = fib.fibRecursive(2);
         assertEq(
-            expected_total[2], result[2], "Fibonacci 2-th suite last value is 1."
+            expected_total[2],
+            result[2],
+            "Fibonacci 2-th suite last value is 1."
         );
 
         expected_total[3] = 2;
         result = fib.fibRecursive(3);
         assertEq(
-            expected_total[3], result[3], "Fibonacci 3-th suite last value is 2."
+            expected_total[3],
+            result[3],
+            "Fibonacci 3-th suite last value is 2."
         );
 
         expected_total[4] = 3;
         result = fib.fibRecursive(4);
         assertEq(
-            expected_total[4], result[4], "Fibonacci 4-th suite last value is 3."
+            expected_total[4],
+            result[4],
+            "Fibonacci 4-th suite last value is 3."
         );
 
         expected_total[5] = 5;
         result = fib.fibRecursive(5);
         assertEq(
-            expected_total[5], result[5], "Fibonacci 5-th suite last value is 5."
+            expected_total[5],
+            result[5],
+            "Fibonacci 5-th suite last value is 5."
         );
 
         expected_total[6] = 8;
@@ -88,7 +102,10 @@ contract FibonacciTest is Test {
                 expected_total[i],
                 string(
                     abi.encodePacked(
-                        "Fibonacci expected value for ", i, "-th is ", expected_total[i]
+                        "Fibonacci expected value for ",
+                        i,
+                        "-th is ",
+                        expected_total[i]
                     )
                 )
             );
@@ -104,37 +121,49 @@ contract FibonacciTest is Test {
         expected_total[0] = 0;
         result = fib.fibMemoization(0);
         assertEq(
-            expected_total[0], result[0], "Fibonacci 0-th suite last value is 0."
+            expected_total[0],
+            result[0],
+            "Fibonacci 0-th suite last value is 0."
         );
 
         expected_total[1] = 1;
         result = fib.fibMemoization(1);
         assertEq(
-            expected_total[1], result[1], "Fibonacci 1-th suite last value is 1."
+            expected_total[1],
+            result[1],
+            "Fibonacci 1-th suite last value is 1."
         );
 
         expected_total[2] = 1;
         result = fib.fibMemoization(2);
         assertEq(
-            expected_total[2], result[2], "Fibonacci 2-th suite last value is 1."
+            expected_total[2],
+            result[2],
+            "Fibonacci 2-th suite last value is 1."
         );
 
         expected_total[3] = 2;
         result = fib.fibMemoization(3);
         assertEq(
-            expected_total[3], result[3], "Fibonacci 3-th suite last value is 2."
+            expected_total[3],
+            result[3],
+            "Fibonacci 3-th suite last value is 2."
         );
 
         expected_total[4] = 3;
         result = fib.fibMemoization(4);
         assertEq(
-            expected_total[4], result[4], "Fibonacci 4-th suite last value is 3."
+            expected_total[4],
+            result[4],
+            "Fibonacci 4-th suite last value is 3."
         );
 
         expected_total[5] = 5;
         result = fib.fibMemoization(5);
         assertEq(
-            expected_total[5], result[5], "Fibonacci 5-th suite last value is 5."
+            expected_total[5],
+            result[5],
+            "Fibonacci 5-th suite last value is 5."
         );
 
         expected_total[6] = 8;
@@ -150,7 +179,10 @@ contract FibonacciTest is Test {
                 expected_total[i],
                 string(
                     abi.encodePacked(
-                        "Fibonacci expected value for ", i, "-th is ", expected_total[i]
+                        "Fibonacci expected value for ",
+                        i,
+                        "-th is ",
+                        expected_total[i]
                     )
                 )
             );
@@ -158,7 +190,9 @@ contract FibonacciTest is Test {
 
         result = fib.fibMemoization(99);
         assertEq(
-            result[99], 218922995834555169026, "Fibonacci 99-th suite last value."
+            result[99],
+            218922995834555169026,
+            "Fibonacci 99-th suite last value."
         );
     }
 }

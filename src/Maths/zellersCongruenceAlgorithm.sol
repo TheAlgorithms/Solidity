@@ -22,11 +22,7 @@ contract ZellersCongruenceAlgorithm {
         uint256 day,
         uint256 month,
         uint256 year
-    )
-        public
-        view
-        returns (string memory result)
-    {
+    ) public view returns (string memory result) {
         uint256 q = day;
         uint256 m = month;
         uint256 y = year;
@@ -35,15 +31,13 @@ contract ZellersCongruenceAlgorithm {
             y -= 1;
         }
         day =
-            (
-                q
-                    + ((26 * (m + 1)) / 10)
-                    + (y % 100)
-                    + ((y % 100) / 4)
-                    + ((y / 100) / 4)
-                    + (5 * (y / 100))
-            )
-            % 7;
+            (q +
+                ((26 * (m + 1)) / 10) +
+                (y % 100) +
+                ((y % 100) / 4) +
+                ((y / 100) / 4) +
+                (5 * (y / 100))) %
+            7;
 
         return daysArr[day];
     }
