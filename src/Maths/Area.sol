@@ -19,7 +19,7 @@ contract Area is Test {
         pure
         returns (uint256 _result)
     {
-        _result = 6 * _side ** 2;
+        _result = 6 * _side**2;
     }
 
     /**
@@ -34,7 +34,7 @@ contract Area is Test {
         returns (uint256 _result)
     {
         uint256 PI_IN_WEI = 3141590000000000000;
-        _result = (4 * PI_IN_WEI * _radius ** 2) / 1e18;
+        _result = (4 * PI_IN_WEI * _radius**2) / 1e18;
     }
 
     /**
@@ -59,7 +59,7 @@ contract Area is Test {
      * @return _result - side ** 2.
      */
     function areaSquare(uint256 _side) public pure returns (uint256 _result) {
-        _result = _side ** 2;
+        _result = _side**2;
     }
 
     /**
@@ -100,11 +100,11 @@ contract Area is Test {
      * @param _height - Integer
      * @return _result (1 / 2) * (base1 + base2) * height
      */
-    function areaTrapezium(uint256 _base1, uint256 _base2, uint256 _height)
-        public
-        pure
-        returns (uint256 _result)
-    {
+    function areaTrapezium(
+        uint256 _base1,
+        uint256 _base2,
+        uint256 _height
+    ) public pure returns (uint256 _result) {
         uint256 HALF_IN_WEI = 500000000000000000;
         _result = (HALF_IN_WEI * (_base1 + _base2) * _height) / 1e18;
     }
@@ -115,13 +115,9 @@ contract Area is Test {
      * @param _radius - Integer
      * @return _result - Math.PI * radius ** 2
      */
-    function areaCircle(uint256 _radius)
-        public
-        pure
-        returns (uint256 _result)
-    {
+    function areaCircle(uint256 _radius) public pure returns (uint256 _result) {
         uint256 PI_IN_WEI = 3141590000000000000;
-        _result = (PI_IN_WEI * _radius ** 2) / 1e18;
+        _result = (PI_IN_WEI * _radius**2) / 1e18;
     }
 
     /**

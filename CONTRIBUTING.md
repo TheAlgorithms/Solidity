@@ -19,5 +19,3 @@ If you want to add or modify the content of this project, [search if an issue al
 #### Solve an issue
 
 Scan through our [existing issues](https://github.com/TheAlgorithms/Solidity/issues) to find one that interests you. You can search for issues according to your experience using `labels` as filters.
-
-

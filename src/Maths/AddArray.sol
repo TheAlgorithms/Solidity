@@ -13,11 +13,7 @@ contract AddArray {
      * @param _arr array of numbers
      * @return total => sum of array.
      */
-    function addArr(uint256[] memory _arr)
-        public
-        pure
-        returns (uint256 total)
-    {
+    function addArr(uint256[] memory _arr) public pure returns (uint256 total) {
         /// @dev Initialize the total we need to return to 0.
         uint256 sum = 0;
 

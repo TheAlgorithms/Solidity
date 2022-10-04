@@ -32,12 +32,8 @@ contract LucasSeries {
      * @dev It is based on lucasRecursiveTerm => consume a lot of gas
      * for large _n.
      */
-    function lucasRecursive(uint256 _n)
-        public
-        pure
-        returns (uint256[] memory)
-    {
-        uint256[] memory result = new uint[](_n + 1);
+    function lucasRecursive(uint256 _n) public pure returns (uint256[] memory) {
+        uint256[] memory result = new uint256[](_n + 1);
 
         for (uint256 i = 0; i < _n + 1; i++) {
             result[i] = lucasRecursiveTerm(i);
@@ -68,7 +64,7 @@ contract LucasSeries {
      * @dev No 'limitation' in term of gas consumption.
      */
     function lucasDynamic(uint256 _n) public pure returns (uint256[] memory) {
-        uint256[] memory result = new uint[](_n + 1);
+        uint256[] memory result = new uint256[](_n + 1);
 
         for (uint256 i = 0; i < _n + 1; i++) {
             result[i] = lucasDynamicTerm(i);
