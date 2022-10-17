@@ -57,9 +57,10 @@ Implementations are for learning purposes only. As they may be less secure than 
     * [Volume](./src/Maths/volume.sol)
     * [Zellers Congruence Algorithm](./src/Maths/zellersCongruenceAlgorithm.sol)
   * [Searches](./src/Searchs)
-    * [Binary Search](./src/Searchs/BinarySearch.sol)
-  *[Sorts](./src/Sorts)
+    * [Binary Search](./src/Searches/BinarySearch.sol)
+  * [Sorts](./src/Sorts)
     * [Bubble Sort](./src/Sorts/BubbleSort.sol)
+    * [Quick Sort](./src/Sorts/QuickSort.sol)
     * [Selection Sort](./src/Sorts/SelectionSort.sol)
 
 
