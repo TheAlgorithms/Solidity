@@ -5,7 +5,7 @@ import "forge-std/Test.sol";
 
 /**
  * @title Calculate the area of various shapes
- * @author Perelyn https://github.com/Perelyn-sama
+ * @author Perelyn (https://github.com/Perelyn-sama)
  */
 contract Area is Test {
     /**

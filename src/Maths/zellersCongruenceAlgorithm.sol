@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @title Zeller's Congruence Algorithm finds the day of the week from the Gregorian Date.
- * @author Perelyn https://github.com/Perelyn-sama
+ * @author Perelyn (https://github.com/Perelyn-sama)
  * @dev Wikipedia: https://en.wikipedia.org/wiki/Zeller%27s_congruence
  */
 contract ZellersCongruenceAlgorithm {

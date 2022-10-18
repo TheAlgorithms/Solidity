@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @title Percentage Calculator Contract.
- * @author Anthony (fps) https://github.com/fps8k.
+ * @author Anthony (fps)  (https://github.com/fps8k)
  * @dev  On big projects like Decentralized Finances, it is required
  *       that in some cases, percentages be applied.
  *       In Solidity, this is tricky, because, percentages are in

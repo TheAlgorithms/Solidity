@@ -2,7 +2,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @title This is a Solidity implementation to factorial.
- * @author Wenceslas Sanchez (wenceslas-sanchez)
+ * @author Wenceslas Sanchez (https://github.com/wenceslas-sanchez)
  */
 contract Factorial {
     /**

@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @title Get the absoule value of an integer.
- * @author Perelyn https://github.com/Perelyn-sama
+ * @author Perelyn (https://github.com/Perelyn-sama)
  */
 contract AliquotSum {
     /// Get the Aliquote sum of a positive integer

@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @title Array Multiplication.
- * @author Anthony (fps) https://github.com/fps8k.
+ * @author Anthony (fps)  (https://github.com/fps8k)
  * @dev Contract to demonstrate how an array is multiplied.
  */
 
