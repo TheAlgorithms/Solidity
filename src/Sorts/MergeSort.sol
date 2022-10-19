@@ -43,9 +43,9 @@ contract MergeSort {
     pure
     returns (uint256[] memory)
   {
+    uint256 idx = 0;
     uint256 idx1 = 0;
     uint256 idx2 = 0;
-    uint256 idx = 0;
     uint256 firstLength = first.length;
     uint256 secondLength = second.length;
     uint256[] memory result = new uint256[](firstLength + secondLength);
