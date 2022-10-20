@@ -41,6 +41,7 @@ Implementations are for learning purposes only. As they may be less secure than 
     * [AliquotSum](./src/Maths/AliquotSum.sol)
     * [Area](./src/Maths/Area.sol)
     * [Armstrong Number](./src/Maths/armstrongNumber.sol)
+    * [Array Reversal](./src/Maths/ReverseArray.sol)
     * [Average Mean](./src/Maths/AverageMean.sol)
     * [Divide Digit](./src/Maths/divideDigit.sol)
     * [Exponentiation](./src/Maths/exponentiation.sol)
