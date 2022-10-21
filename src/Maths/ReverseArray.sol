@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @title Array Reversal.
- * @author Sumit Banik https://github.com/iSumitBanik
+ * @author [Sumit Banik](https://github.com/iSumitBanik)
  * @dev Contract to demonstrate how an array is reversed.
  */
 
