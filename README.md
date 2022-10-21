@@ -42,7 +42,6 @@ Implementations are for learning purposes only. As they may be less secure than 
     - [Area](./src/Maths/Area.sol)
     - [Armstrong Number](./src/Maths/armstrongNumber.sol)
     - [Array Reversal](./src/Maths/ReverseArray.sol)
-    - [Array Reversal](./src/Maths/ReverseArray.sol)
     - [Average Mean](./src/Maths/AverageMean.sol)
     - [BinaryExponentiation](./src/Maths/BinaryExponentiation.sol)
     - [Divide Digit](./src/Maths/divideDigit.sol)
