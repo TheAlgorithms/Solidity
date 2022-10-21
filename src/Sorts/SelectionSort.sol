@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @title returns an array of sorted numbers
- * @author Chiadikaobi(https://github.com/Chiadikaobixo)
+ * @author [Chiadikaobi](https://github.com/Chiadikaobixo)
  * @dev https://en.wikipedia.org/wiki/Selection_sort
  */
 

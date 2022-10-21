@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @title Calculate the volume of the shapes
- * @author Perelyn (https://github.com/Perelyn-sama)
+ * @author [Perelyn](https://github.com/Perelyn-sama)
  * @dev Volumes that are supposed in decimals are slightly inaccurate
  */
 contract Volume {

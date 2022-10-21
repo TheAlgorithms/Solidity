@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @title find the index position of a value in an array of sorted numbers
- * @author Chiadikaobi (https://github.com/Chiadikaobixo)
+ * @author [Chiadikaob](https://github.com/Chiadikaobixo)
  * @dev https://en.wikipedia.org/wiki/Binary_search_algorithm
  */
 

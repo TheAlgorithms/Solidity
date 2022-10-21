@@ -4,7 +4,7 @@ pragma solidity >=0.7.0 <0.9.0;
 
 /**
  * @title sort given array using Quick sort.
- * @author priyda (https://github.com/priyda)
+ * @author [priyda](https://github.com/priyda)
  * @dev Contract to demonstrate how quick sort is working.
  */
 
