@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 /**
   @title BinaryExponentiation
-  @author https://github.com/xeno097
+  @author [Sebastiano Faiella](https://github.com/xeno097)
   @notice A contract that implements the binary exponentiation
     algorithm for unsigned integers.
   @dev This algorithm allows to efficiently calculate base**exp
