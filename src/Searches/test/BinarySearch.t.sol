@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 import "forge-std/Test.sol";
 import "../BinarySearch.sol";
 
-contract LinearSearchTest is Test {
+contract BinarySearchTest is Test {
     // Target contract
     BinarySearch bs;
 
