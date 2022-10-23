@@ -9,14 +9,14 @@ pragma solidity ^0.8.0;
  */
 
 contract ReverseArray {
-        /**
-        * @dev internal function which takes in an array of numbers,start and end index,as an ouput returns the reversed array.
-        * @param _array => array of numbers
-        * @param start => start index of the array
-        * @param end => ending index of the array
-        * @return _array => reversed array.
-        */
-        function _reverseArray(
+    /**
+     * @dev internal function which takes in an array of numbers,start and end index,as an ouput returns the reversed array.
+     * @param _array => array of numbers
+     * @param start => start index of the array
+     * @param end => ending index of the array
+     * @return _array => reversed array.
+     */
+    function _reverseArray(
         uint256[] memory _array,
         uint256 start,
         uint256 end
@@ -29,11 +29,12 @@ contract ReverseArray {
 
         return _array;
     }
-    /** 
-    * @dev external function which takes in an array of numbers and as an ouput returns the reversed array.
-    * @param _array => array of numbers
-    * @return _array => reversed array using the _reverseArray internal function.
-    */
+
+    /**
+     * @dev external function which takes in an array of numbers and as an ouput returns the reversed array.
+     * @param _array => array of numbers
+     * @return _array => reversed array using the _reverseArray internal function.
+     */
     function reverse(uint256[] memory _array)
         external
         pure
