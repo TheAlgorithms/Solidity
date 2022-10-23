@@ -2,7 +2,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @title This is a Solidity implementation to Lucas sequence problem.
- * @author Wenceslas Sanchez (wenceslas-sanchez)
+ * @author [Wenceslas Sanchez](https://github.com/wenceslas-sanchez)
  * @dev Related to Fibonacci sequence number.
  */
 contract LucasSeries {

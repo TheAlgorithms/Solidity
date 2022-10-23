@@ -2,6 +2,12 @@
 
 pragma solidity >=0.7.0 <0.9.0;
 
+/**
+ * @title sort given array using Quick sort.
+ * @author [Priyda](https://github.com/priyda)
+ * @dev Contract to demonstrate how quick sort is working.
+ */
+
 contract QuickSort {
     
     function sort(uint[] memory data) public  returns(uint[] memory) {

@@ -1,14 +1,16 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-/// @title MergeSort
-/// @author https://github.com/xeno097
-/// @notice A contract that implements the mergesort algorithm.
-/// @dev This algorithm allows to sort an array by recursively
-/// splitting it into smaller sub-arrays of 1 elements and
-/// then merging them into sorted sublists until only one array
-/// remains.
-///
+/**
+ * @title MergeSort
+ * @author [xeno097](https://github.com/xeno097)
+ * @notice A contract that implements the mergesort algorithm.
+ * @dev This algorithm allows to sort an array by recursively
+ * splitting it into smaller sub-arrays of 1 elements and
+ * then merging them into sorted sublists until only one array
+ * remains.
+ */
+
 contract MergeSort {
   /// @notice Sorts the given array in increasing order.
   /// @param input The array to sort.

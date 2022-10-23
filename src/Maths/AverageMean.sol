@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 /**
  * @title find the mean value of an array of numbers
- * @author Perelyn https://github.com/Perelyn-sama
+ * @author [Perelyn](https://github.com/Perelyn-sama)
  * @dev https://en.wikipedia.org/wiki/Mean
  */
 contract AverageMean {
