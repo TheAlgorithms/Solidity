@@ -32,6 +32,32 @@ This is going to be used for our partnership with [Dev Protocol](https://devprot
 
 Implementations are for learning purposes only. As they may be less secure than in real-world context, use them at your discretion.
 
+## Set up 
+
+Guide to install foundry - https://book.getfoundry.sh/getting-started/installation
+
+Clone project and enter directory
+```bash
+  git clone https://github.com/TheAlgorithms/Solidity.git
+  cd Solidity
+```
+
+Install forge-std(Forge Standard Library)
+```bash
+  forge install foundry-rs/forge-std 
+```
+
+Build project 
+```bash 
+  forge build
+```
+
+Run tests 
+```bash 
+  # forge test --match-contract <contract-name>Test
+  forge test --match-contract AbsTest
+```
+
 ## Lists of Algorithms
 
 - [Algorithms](./src)
