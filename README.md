@@ -36,7 +36,8 @@ Implementations are for learning purposes only. As they may be less secure than 
 
 Guide to install `foundry` - <https://book.getfoundry.sh/getting-started/installation>
 
-Clone project and enter directory
+Clone the current project and enter the directory.
+
 ```bash
   git clone https://github.com/TheAlgorithms/Solidity.git
   cd Solidity
