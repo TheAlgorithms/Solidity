@@ -54,7 +54,8 @@ Build the project using `forge-std`.
   forge build
 ```
 
-Run tests 
+Run `forge-std` automatic tests.
+
 ```bash 
   # forge test --match-contract <contract-name>Test
   forge test --match-contract AbsTest
