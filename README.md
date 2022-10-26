@@ -32,7 +32,7 @@ This is going to be used for our partnership with [Dev Protocol](https://devprot
 
 Implementations are for learning purposes only. As they may be less secure than in real-world context, use them at your discretion.
 
-## Set up 
+## Setting up `foundry`
 
 Guide to install `foundry` - <https://book.getfoundry.sh/getting-started/installation>
 
