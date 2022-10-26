@@ -48,7 +48,8 @@ Install forge-std(Forge Standard Library)
   forge install foundry-rs/forge-std 
 ```
 
-Build project 
+Build the project using `forge-std`.
+
 ```bash 
   forge build
 ```
