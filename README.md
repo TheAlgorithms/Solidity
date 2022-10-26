@@ -43,7 +43,8 @@ Clone the current project and enter the directory.
   cd Solidity
 ```
 
-Install forge-std(Forge Standard Library)
+Installing `forge-std` (Forge Standard Library).
+
 ```bash
   forge install foundry-rs/forge-std 
 ```
