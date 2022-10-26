@@ -34,7 +34,7 @@ Implementations are for learning purposes only. As they may be less secure than 
 
 ## Set up 
 
-Guide to install foundry - https://book.getfoundry.sh/getting-started/installation
+Guide to install `foundry` - <https://book.getfoundry.sh/getting-started/installation>
 
 Clone project and enter directory
 ```bash
