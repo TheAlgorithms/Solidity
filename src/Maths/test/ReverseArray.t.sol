@@ -9,8 +9,19 @@ contract ReverseArrayTest is Test {
     ReverseArray reverseArray;
 
     /// Test Params
-    uint256[] private testArray = [202,27,123,1,66,76,2,55,111,455];
-    uint256[] private expectedreversedArray = [455, 111, 55, 2, 76, 66, 1, 123, 27, 202];
+    uint256[] private testArray = [202, 27, 123, 1, 66, 76, 2, 55, 111, 455];
+    uint256[] private expectedreversedArray = [
+        455,
+        111,
+        55,
+        2,
+        76,
+        66,
+        1,
+        123,
+        27,
+        202
+    ];
 
     function setUp() public {
         reverseArray = new ReverseArray();
@@ -19,8 +30,7 @@ contract ReverseArrayTest is Test {
     /// @dev Test `reverseArray`
 
     function test_reverseArray() public {
-
-        uint[] memory reversedArray = reverseArray.reverse(testArray);
-        assertEq(reversedArray,expectedreversedArray);
+        uint256[] memory reversedArray = reverseArray.reverse(testArray);
+        assertEq(reversedArray, expectedreversedArray);
     }
 }
