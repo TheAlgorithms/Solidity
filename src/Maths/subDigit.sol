@@ -1,5 +1,5 @@
 // Solidity program to demonstrate the subtraction
-pragma solidity 0.6.6;
+pragma solidity ^0.8.0;
 
 // In Subtraction, we could have used any value of Integer
 // (int16 to int256) but all the operands must be of the same
