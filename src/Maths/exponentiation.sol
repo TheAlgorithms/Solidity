@@ -1,5 +1,6 @@
-// Solidity program to demonstrate the exponentiation operation
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.6.6;
+// Solidity program to demonstrate the exponentiation operation
 
 // Creating a contract
 contract Exponentiation {
