@@ -1,5 +1,7 @@
-// Solidity program to demonstrate the multiplication
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
+
+// Solidity program to demonstrate the multiplication
 
 contract multiplyDigit {
     int128 firstNo;

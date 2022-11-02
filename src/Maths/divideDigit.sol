@@ -1,5 +1,7 @@
-// Solidity program to demontstrate the division operation
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
+
+// Solidity program to demontstrate the division operation
 
 // Creating a contract
 contract divideDigit {

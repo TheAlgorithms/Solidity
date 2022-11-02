@@ -1,5 +1,7 @@
-// Solidity program to demonstrate the subtraction
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
+
+// Solidity program to demonstrate the subtraction
 
 // In Subtraction, we could have used any value of Integer
 // (int16 to int256) but all the operands must be of the same
