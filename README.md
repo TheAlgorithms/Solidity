@@ -32,37 +32,73 @@ This is going to be used for our partnership with [Dev Protocol](https://devprot
 
 Implementations are for learning purposes only. As they may be less secure than in real-world context, use them at your discretion.
 
-## Lists of Algorithms-
+## Setting up `foundry`
 
-* [Algorithms](./src)
-  * [Maths](./src/Maths)
-    * [Abs](./src/Maths/Abs.sol)
-    * [AddArray](./src/Maths/AddArray.sol)
-    * [AliquotSum](./src/Maths/AliquotSum.sol)
-    * [Area](./src/Maths/Area.sol)
-    * [Armstrong Number](./src/Maths/armstrongNumber.sol)
-    * [Average Mean](./src/Maths/AverageMean.sol)
-    * [Divide Digit](./src/Maths/divideDigit.sol)
-    * [Exponentiation](./src/Maths/exponentiation.sol)
-    * [Factorial](./src/Maths/factorial.sol)
-    * [Fibonacci](./src/Maths/fibonacci.sol)
-    * [Lucas Series](./src/Maths/lucasSeries.sol)
-    * [Modulo](./src/Maths/modulo.sol)
-    * [Multiply Array](./src/Maths/MulArray.sol)
-    * [Multiply Digit](./src/Maths/multiplyDigit.sol)
-    * [Percentage](./src/Maths/Percentage.sol)
-    * [Perfect Square](./src/Maths/perfectSquare.sol)
-    * [Sub Digit](./src/Maths/subDigit.sol)
-    * [Sum Digit](./src/Maths/subDigit.sol)
-    * [Volume](./src/Maths/volume.sol)
-    * [Zellers Congruence Algorithm](./src/Maths/zellersCongruenceAlgorithm.sol)
-  * [Searches](./src/Searchs)
-    * [Binary Search](./src/Searchs/BinarySearch.sol)
-  *[Sorts](./src/Sorts)
-    * [Bubble Sort](./src/Sorts/BubbleSort.sol)
-    * [Selection Sort](./src/Sorts/SelectionSort.sol)
+Guide to installing `foundry` - <https://book.getfoundry.sh/getting-started/installation>\
+Clone the current project and enter the directory.
 
+```bash
+  git clone https://github.com/TheAlgorithms/Solidity.git
+  cd Solidity
+```
 
- ## Community Channels
+Installing `forge-std` (Forge Standard Library).
+
+```bash
+  forge install foundry-rs/forge-std 
+```
+
+Build the project using `forge-std`.
+
+```bash 
+  forge build
+```
+
+Run `forge-std` automatic tests.
+
+```bash 
+  # forge test --match-contract <contract-name>Test
+  forge test --match-contract AbsTest
+```
+
+## Lists of Algorithms
+
+- [Algorithms](./src)
+  - [Maths](./src/Maths)
+    - [Abs](./src/Maths/Abs.sol)
+    - [AddArray](./src/Maths/AddArray.sol)
+    - [AliquotSum](./src/Maths/AliquotSum.sol)
+    - [Area](./src/Maths/Area.sol)
+    - [Armstrong Number](./src/Maths/armstrongNumber.sol)
+    - [Array Reversal](./src/Maths/ReverseArray.sol)
+    - [Average Mean](./src/Maths/AverageMean.sol)
+    - [BinaryExponentiation](./src/Maths/BinaryExponentiation.sol)
+    - [Divide Digit](./src/Maths/divideDigit.sol)
+    - [Exponentiation](./src/Maths/exponentiation.sol)
+    - [Factorial](./src/Maths/factorial.sol)
+    - [Fibonacci](./src/Maths/fibonacci.sol)
+    - [Lucas Series](./src/Maths/lucasSeries.sol)
+    - [Modulo](./src/Maths/modulo.sol)
+    - [Multiply Array](./src/Maths/MulArray.sol)
+    - [Multiply Digit](./src/Maths/multiplyDigit.sol)
+    - [Percentage](./src/Maths/Percentage.sol)
+    - [Perfect Square](./src/Maths/perfectSquare.sol)
+    - [Sub Digit](./src/Maths/subDigit.sol)
+    - [Sum Digit](./src/Maths/subDigit.sol)
+    - [String Matching](./src/Maths/stringMatch.sol)
+    - [Volume](./src/Maths/volume.sol)
+    - [Zellers Congruence Algorithm](./src/Maths/zellersCongruenceAlgorithm.sol)
+  - [Dynamic Programming](./src/DynamicProgramming)
+    - [Knapsack](./src/DynamicProgramming/Knapsack.sol)
+  - [Searches](./src/Searches)
+    - [Binary Search](./src/Searches/BinarySearch.sol)
+    - [Linear Search](./src/Searches/LinearSearch.sol)
+  - [Sorts](./src/Sorts)
+    - [Bubble Sort](./src/Sorts/BubbleSort.sol)
+    - [Merge Sort](./src/Sorts/MergeSort.sol)
+    - [Quick Sort](./src/Sorts/QuickSort.sol)
+    - [Selection Sort](./src/Sorts/SelectionSort.sol)
+
+## Community Channels
 
 We're on [Discord](https://discord.gg/c7MnfGFGa6) and [Gitter](https://gitter.im/TheAlgorithms)! Community channels are great for you to ask questions and get help. Please join us!

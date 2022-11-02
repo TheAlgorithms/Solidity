@@ -1,10 +1,9 @@
 // SPDX-License-Identifier: MIT
-
 pragma solidity ^0.8.0;
 
 /**
  * @title String Matching.
- * @author Sreek  https://github.com/sreekar9601.
+ * @author [Sreek](https://github.com/sreekar9601)
  * @dev Contract to demonstrate matching of two strings.
  */
 
