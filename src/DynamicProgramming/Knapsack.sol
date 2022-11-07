@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: UNLICENSED
+// SPDX-License-Identifier: MIT
 // https://atcoder.jp/contests/dp/tasks/dp_d
 // https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
 
