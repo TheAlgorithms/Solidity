@@ -36,15 +36,19 @@ contract BinarySearch {
             uint256 currentElement = _nums[middle];
             if (currentElement < value) {
                 minimum = middle + 1;
-            } else if (currentElement > value) {
-                maximum = middle - 1;
+            } 
+            else if (currentElement > value) {
+                if (middle == 0) {
+                    maximum = 0;
+                } else {
+                    maximum = middle - 1;
+                }
             } else {
-                result = middle;
+                result = int256(middle);
                 // return the index position of the value in the array
                 return result;
             }
         }
-        // return 0 if value is not in the array
-        return 0;
+        return -1;
     }
 }
