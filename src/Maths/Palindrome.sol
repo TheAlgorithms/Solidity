@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract PalindromeChecker {
+contract PalindromeChecker 
     // Function to check if a given string is a palindrome
     function isPalindrome(string memory str) public pure returns (bool) {
         // Convert the input string to a bytes array
